@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Шестое чувство</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@100;300;400;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="inner-header">
+        <a href="https://sfedu.ru/"><img src="./img/logosfeduruswhite.svg" alt="SFedU Logo" height="70px" width="70px"
+            class="header-logo" /></a>
+        <nav>
+          <a href="#about-exp">О проекте</a>
+          <a href="#contact">Команда</a>
+          <a href="#partners">Партнеры</a>
+        </nav>
+        <a class="results-btn" href="">Скачать
+          приложение</a>
+      </div>
+    </header>
+
+    <script>
+      let header = document.getElementsByClassName("header")[0];
+      let headerBG = window
+        .getComputedStyle(header)
+        .getPropertyValue("background-color");
+      function setHeaderOpacity() {
+        if (!header.classList.contains("darken")) {
+          header.classList.add("darken");
+        }
+      }
+      function unsetHeaderOpacity() {
+        if (header.classList.contains("darken")) {
+          header.classList.remove("darken");
+        }
+      }
+
+      document.addEventListener("scroll", function (e) {
+        if (window.pageYOffset == 0) {
+          unsetHeaderOpacity();
+        } else {
+          setHeaderOpacity();
+        }
+      }, { passive: true });
+    </script>
+
+    <main>
+      <section class="intro">
+
+        <div class="main-text">
+          <img src="./img/Логотип_без заголовка.png" alt="#" />
+          <h1><span class="sfedu">Шестое чувство</span></h1>
+          <p>проект реализуется спин-офф компанией ИКТИБ ЮФУ ООО «ЭКСПОНЕНТА»
+          <p>при поддержке Фонда содействия инновациям</p>
+          <p>на базе ИКТИБ ЮФУ</p>
+          </p>
+        </div>
+      </section>
+
+      <section class="about-exp" id="about-exp">
+        <div class="text-container">
+          <div class="text">
+            <h2>Что такое Шестое Чувство?</h2>
+            <p>
+              Шестое чувство это система для навигации внутри помещений для слепых или слабовидящих людей.
+            </p>
+            <p>
+              Нужно просто скачать мобильное приложение и система готова к использованию
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="container">
+        <div class="text-container">
+          <div class="center">
+            <a href="" class="results-btn2">Скачать
+              приложение</a>
+          </div>
+        </div>
+      </div>
+
+
+      <section class="contact" id="contact">
+        <div class="info-container">
+          <div class="text">
+            <h2>Команда</h2>
+            <div class="ourteam">
+              <div>
+                <div class="team">
+                  <a href="https://sfedu.ru/" class="item"><img src="./Plenkin.jpg" alt="SFedU logo"
+                      class="demo"></a>
+                  <p>Плёнкин Антон Павлович<br></p>
+                </div>
+  
+                <div class="team">
+                  <a href="https://sfedu.ru/" class="item"><img src="./vitaly.jpg" alt="SFedU logo"
+                      class="demo"></a>
+                  <p>Фролов Виталий Витальевич<br></p>
+                </div>
+  
+                <div class="team">
+                  <a href="https://sfedu.ru/" class="item"><img src="./Nikita.jpg" alt="SFedU logo"
+                      class="demo"></a>
+                  <p>Прокопович Никита Андреевич<br></p>
+                </div>
+              </div>
+
+              <div>
+                <div class="team">
+                  <a href="https://sfedu.ru/" class="item"><img src="./Sergey.jpg" alt="SFedU logo"
+                      class="demo"></a>
+                  <p>Бекезин Сергей Александрович<br></p>
+                </div>
+                <div class="team">
+                  <a href="https://sfedu.ru/" class="item"><img src="./Nikolay.jpg" alt="SFedU logo"
+                      class="demo"></a>
+                  <p>Шипицин Николай Вадимович<br></p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1814.3875575947989!2d38.94067879304443!3d47.20347369262551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3fd23c20a9a87%3A0xa9050147bf76417c!2z0JjQvdGB0YLQuNGC0YPRgiDQmtC-0LzQv9GM0Y7RgtC10YDQvdGL0YUg0KLQtdGF0L3QvtC70L7Qs9C40Lkg0Lgg0JjQvdGE0L7RgNC80LDRhtC40L7QvdC90L7QuSDQkdC10LfQvtC_0LDRgdC90L7RgdGC0Lg!5e0!3m2!1sru!2sru!4v1622543101570!5m2!1sru!2sru"
+              width="100%" height="100%" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+              tabindex="0" title="SFedU Location"></iframe>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="partners" id="partners">
+        <div class="info-container">
+          <div class="text">
+            <div class="logos">
+              <div class="row">
+                <a href="https://sfedu.ru/" class="item"><img src="./img/logosfedurus.png" alt="SFedU logo"
+                    class="logo"></a>
+                <a href="https://ictis.sfedu.ru/" class="item"><img src="./img/ICTIS.png" alt="Ictis logo" class="logo"></a>
+                <a href="https://proictis.sfedu.ru/" class="item"><img src="./img/logo_proictis_dark.png" alt="skb logo"
+                    class="logo"></a>
+                    <a href="https://fasie.ru/" class="item"><img src="./img/rsci.jpeg" alt="#" class="logo" /></a>
+                <a href="https://xn--d1achjhdicc8bh4h.xn--p1ai/" class="item"><img src="./img/logohor.png" width="300" alt="#"
+                    class="logo" /></a>
+                <a href="https://sfedu.ru/" class="item"><img src="./img/PLJONKIN.png" alt="#" class="logo" /></a>
+                <a href="https://exponent.sfedu.ru/"><img src="Logo_exp(sfedu).png" alt="#" class="logo" /></a>
+              </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>ООО "ЭКСПОНЕНТА" | 2024 | pljonkin@sfedu.ru | +79O54592158</p>
+    </footer>
+  </div>
+</body>
+
+</html>
